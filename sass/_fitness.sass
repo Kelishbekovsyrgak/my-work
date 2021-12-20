@@ -1,0 +1,199 @@
+.logo
+    transition: .6s
+    &:hover
+        transform: rotate(360deg)
+    
+.underline 
+    position: relative
+    font-family: 'Alegreya', serif
+    color: #837171
+    font-weight: normal
+    font-size: 24px
+    line-height: 160%
+    &::before 
+        content: ''
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 0
+        height: 3px
+        background-color: #ff0000
+        border-radius: 20px
+        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1)
+
+
+@media (hover: hover) and (pointer: fine) 
+    .underline:hover::before
+        left: 0
+        right: auto
+        width: 100%
+
+.fitness
+    position: relative
+    background: linear-gradient(to right, transparent 55%, #ffdf86 55%)
+    min-height: 758px
+    display: grid
+
+    .container
+        position: relative
+
+
+.fitness__women img
+    position: absolute
+    width: 758px
+    height: 100%
+    object-fit: cover
+    right: 0
+    top: 0px
+    border-radius: 0px 0px 0px 107px
+
+.fitness__women:after
+    content: ''
+    position: absolute
+    bottom: 10px
+    right: 25px
+    width: 118px
+    height: 140px
+    background: repeating-radial-gradient(#ff2525, #FF262599 2px, transparent 2px, transparent 100%)
+    background-size: 13px 15px
+
+
+.fitness__info
+    margin-top: 212px
+
+.first__square
+    position: absolute
+    background: rgba(255, 38, 37, 0.03)
+    border-radius: 5px 
+    width: 114.03px
+    height: 158.33px
+    left: 0px
+    top: 187px
+
+.second__square
+    background: rgba(255, 38, 37, 0.03)
+    border-radius: 5px
+    position: absolute
+    width: 103.37px
+    height: 217.4px
+    left: 29px
+    top: 255px
+
+.fitness__info h4 
+    font-weight: 600
+    font-size: 26px
+    line-height: 160%
+    color: #FF2625
+    font-family: 'Josefin Sans', sans-serif
+
+.vector
+    align-self: center
+    margin-left: 15px
+    transition: .6s all
+    cursor: pointer
+
+.vector:hover
+    transform: scale(1.3)
+
+.fitness__title h1 
+    font-weight: bold
+    font-size: 80px
+    line-height: 110%
+    color: #3A1212
+    max-width: 472px
+    margin-top: 39px
+
+.fitness__title p 
+    font-weight: normal
+    font-size: 22px
+    line-height: 160%
+    color: #504747
+    max-width: 470px
+    font-family: 'Alegreya', serif
+    margin-top: 10px
+
+.fitness__button
+    margin-top: 61px
+
+.first__button
+    font-weight: bold
+    font-size: 22px
+    line-height: 160%
+    color: #FFFFFF
+    font-family: 'Alegreya', serif
+    filter: drop-shadow(0px 20px 40px rgba(255, 155, 154, 0.25))
+    background: #FF2625
+    border-radius: 29px
+    max-width: 200px
+    padding: 11px 57px
+    border: none
+    transition: .6s all
+    &:hover
+        color: #3A1212
+        background: #fff
+        border: #FF2625 solid 2px
+        padding: 9px 55px
+
+.second__button
+    font-weight: bold
+    font-size: 22px
+    line-height: 160%
+    color: #3A1212
+    font-family: 'Alegreya', serif
+    filter: drop-shadow(0px 20px 40px rgba(255, 155, 154, 0.25))
+    background: #ffffff
+    border-radius: 29px
+    max-width: 225px
+    padding: 9px 55px
+    border: solid 2px #FF2625
+    margin-left: 29px
+    transition: .6s all
+    &:hover
+        color: #FFFFFF
+        background: #FF2625
+        padding: 11px 57px
+        border: none
+
+.fitness__exercise h2 
+    font-weight: 600
+    font-size: 200px
+    line-height: 160%
+    margin-top: 100px
+    color: rgba(255, 38, 37, 0.05)
+    font-family: 'Josefin Sans', sans-serif
+    max-width: 747px
+
+@media screen and (max-width:1400px)
+    .fitness__women img
+        display: none
+
+    .fitness
+        background: none
+
+    .navbar
+        display: grid
+        grid-gap: 30px
+        justify-content: center
+
+    .navbar-brand
+        margin-left: auto
+
+    .fitness__info h4 
+        text-align: center
+
+    .fitness__title h1, p
+        margin: 0 auto
+        
+    .fitness__button
+        text-align: center
+
+
+
+
+
+
+
+
+
+
+
